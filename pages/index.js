@@ -1,13 +1,14 @@
 import Head from 'next/head'
+import Container from '../components/container'
 
 const Home = () => (
-  <div className="container">
+  <>
     <Head>
-      <title>Create Next App</title>
+      <title>Blog - for Joy</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main>
+    <Container>
       <h1 className="title">
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
@@ -45,7 +46,7 @@ const Home = () => (
           </p>
         </a>
       </div>
-    </main>
+    </Container>
 
     <footer>
       <a
@@ -197,7 +198,7 @@ const Home = () => (
         box-sizing: border-box;
       }
     `}</style>
-  </div>
+  </>
 )
 
 export default Home
